@@ -1,5 +1,5 @@
 :root {
-    --back:  #0D0221;
+    --back:  #000000;
     --white:#FCF8EC;
     --darkgreen:#1A3D3A;
     --d2:#012614;
@@ -36,7 +36,8 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-nav{
+/* nav */
+nav {
     display: flex;
     width: 100%;
     height: 104px;
@@ -44,14 +45,23 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    background-color: var(--white) ;
+    background-color: var(--white); /* default color */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* smooth transition */
 }
+nav.scrolled {
+    background-color: rgba(252, 248, 236, 0.8); /* faded on scroll */
+    backdrop-filter: blur(5px); /* optional: blur behind nav */
+}
+
 .navd{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    /* gap: 218px; */
+
 }
 .logodiv {
     width: 178px;
@@ -79,9 +89,9 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: 30.6px;
-    position: relative; /* Keep above the heart */
-    z-index: 2; /* Ensure text is above heart */
-    transition: color 0.3s ease; /* Smooth color change */
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease; 
 }
 
 .hearticon {
@@ -90,21 +100,20 @@ nav{
     height: 41.176px;
     background-size: contain;
     background-repeat: no-repeat;
-    position: absolute; /* Position relative to parent (.logodiv) */
+    position: absolute;
     top: 20%; 
     left: 90%;
-    transform: translate(-50%, -50%); /* Center heart behind text */
-    z-index: 1; /* Behind the logo */
-    transition: transform 0.3s ease; /* Smooth hover transform */
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
-/* Hover effect for both logo and heart */
 .logodiv:hover .logo {
-    color: #04c504; /* Change text color on hover */
+    color: #04c504; 
 }
 
 .logodiv:hover .hearticon {
-    transform: translate(-50%, -50%) scale(1.2) rotate(-15deg); /* Heart animates */
+    transform: translate(-50%, -50%) scale(1.2) rotate(-15deg); 
 }
 
 
@@ -125,7 +134,7 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    transition: all 0.3s ease; /* Smooth hover transition */
+    transition: all 0.3s ease;
 }
 
 .navbt:hover {
@@ -143,7 +152,6 @@ a{
     align-items: center;
 }
 
-/* Arrow SVG */
 .ar {
     width: 38px;
     height: 38px;
@@ -151,12 +159,10 @@ a{
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 .ar:hover {
-    transform: scale(1.2); /* Make bigger */
-    filter: brightness(1.5) sepia(0.5) hue-rotate(90deg); /* Change color */
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-/* Dark mode container */
 .darkmodediv {
     height: 39.802px;
     display: flex;
@@ -165,7 +171,6 @@ a{
     align-items: center;
 }
 
-/* Dark mode button/icon */
 .darkmodebt {
     width: 24px;
     height: 24px;
@@ -174,11 +179,9 @@ a{
 }
 .darkmodebt:hover {
     transform: scale(1.2);
-    filter: brightness(1.5) sepia(0.3) hue-rotate(60deg);
     cursor: pointer;
 }
 
-/* Dark mode label */
 .darkmode {
     color: var(--lightgreen);
     font-size: 8.923px;
@@ -188,13 +191,12 @@ a{
     transition: color 0.3s ease;
 }
 .darkmodediv:hover .darkmode {
-    color: #ff4d4d; /* lighter green on hover */
+    color: #ff4d4d; 
 }
 .profilediv:hover .darkmode {
-    color:#ff4d4d; /* lighter green on hover */
+    color:#ff4d4d;
 }
 
-/* Profile icon */
 .profileicon {
     width: 39px;
     height: 39px;
@@ -207,7 +209,6 @@ a{
     cursor: pointer;
 }
 
-/* Profile container */
 .profilediv {
     width: 40px;
     height: 50px;
@@ -216,8 +217,6 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
-/* Logout text */
 .logout {
     color: var(--d2);
     font-size: 16px;
@@ -228,7 +227,174 @@ a{
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .logout:hover {
-    color: #ff4d4d; /* Highlight on hover */
+    color: #ff4d4d; 
     transform: scale(1.05);
     cursor: pointer;
+}
+/* section1 */
+.s1{
+    width: 100%;
+height: 953px;
+ margin-top: 104px;
+aspect-ratio: 1513/953;
+background-image: url(assets/homesection1.png);
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center
+}
+.s1div1{
+display: flex;
+width: 1367px;
+height: 805px;
+padding: 83px 39px;
+justify-content: space-between;
+align-items: center;    width: 1367px;
+height: 805px;
+background-color: var(--white);
+border-radius: 46px;
+display: flex;
+flex-direction:row ;
+border-radius: 46px;
+background: var(--white);
+}
+.child1{
+    display: flex;
+width: 815px;
+flex-direction: column;
+align-items: flex-start;
+gap: 31px;
+flex-shrink: 0;
+}
+h1{
+    color: var(--back);
+font-family: "ne";
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: 113.48%; /* 108.941px */
+}
+.highlight {
+  color: var(--lightgreen); /* or any color you want */
+}
+.p1{
+    color: var(--back);
+font-size: 24px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+width: 453px;
+}
+.s1btdiv{
+    width: 439px;
+height: 62.353px;
+display: flex;
+flex-direction: row;
+justify-content: space-between
+}
+.learnmorebt {
+    display: flex;
+    width: 212px;
+    height: 62.353px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    gap: 9.007px;
+    border-radius: 18.013px;
+    border: 3px solid var(--lightgreen);
+    transition: all 0.3s ease; /* smooth hover */
+    cursor: pointer; /* clickable */
+}
+
+.learnmorebt:hover {
+    background-color: var(--lightgreen); /* fill with green */
+    transform: scale(1.05); /* subtle zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+.learnmore {
+    color: var(--lightgreen);
+    font-size: 16.627px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.learnmorebt:hover .learnmore {
+    color: var(--white); /* text turns white on hover */
+}
+
+.arrow1 {
+    width: 27.02px;
+    height: 27.02px;
+    background-size: contain;
+    background-image: url(icons/aroow1.png);
+    transition: transform 0.3s ease;
+}
+
+.learnmorebt:hover .arrow1 {
+    transform: translateX(5px); /* arrow slides slightly on hover */
+}
+
+.findsupportbt {
+    display: flex;
+    width: 212px;
+    height: 62.353px;
+    justify-content: center;
+    align-items: center;
+    gap: 9.007px;
+    border-radius: 18.013px;
+    background: #203A8E;
+    transition: all 0.3s ease; /* smooth hover effect */
+    cursor: pointer; /* indicate it's clickable */
+}
+
+.findsupportbt:hover {
+    background: #1a2e7a; /* slightly darker on hover */
+    transform: scale(1.05); /* subtle zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+.find {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.findsupportbt:hover .find {
+    color: #a3fca3; /* optional: change text color on hover */
+}
+
+.i1{
+    display: flex;
+width: 252.131px;
+height: 70px;
+padding-bottom: 0;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.num{
+    color: var(--darkgreen);
+font-size: 20.513px;
+font-style: normal;
+font-weight: 400;
+line-height: 30.769px; /* 150% */
+}
+.inftext{
+    color: var(--back);
+font-size: 23.077px;
+font-style: normal;
+font-weight: 400;
+width: 400px;
+line-height: 39.231px; /* 170% */
+}
+.s1img2{
+    width: 444px;
+height: 618px;
+flex-shrink: 0;
+aspect-ratio: 74/103;
+background-image: url(assets/s1img2.png);
+background-size: contain;
 }
