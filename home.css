@@ -13,6 +13,8 @@
     --selected: rgba(1, 127, 1, 0.43);
     --logohover:#04c504;
     --navblur:rgba(252, 248, 236, 0.8);
+    --pinkh:#FF92A5;
+    --pink:#E77790;
 }
 
 @font-face {
@@ -551,6 +553,8 @@ flex-direction: column;
 align-items: flex-start;
 gap: 10px;
 position: relative;
+align-items: center;
+justify-content: center;
 }
 .s3d1{
     display: flex;
@@ -689,6 +693,87 @@ height: 89px;
 transform: rotate(-11.213deg);
 background-image: url(assets/Star\ 3.svg);
 margin-top: -140px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.s4{
+    width: 100%;
+    height: 808px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.s4d1{
+    width: 1317px;
+    height: 557px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.c3{
+    width: 674px;
+height: 548px;
+background-image: url(assets/Rectangle\ 49.svg);
+background-size: contain;
+display: flex;
+align-items: center;
+justify-content: center;
+background-repeat: no-repeat;
+}
+.c3d{
+    display: flex;
+width: 620px;
+flex-direction: column;
+align-items: center;
+gap: 56px;
+}
+.help{
+    color: var(--d2);
+text-align: center;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 30.6px; /* 47.813% */
+}
+.p4{
+    color: var(--back);
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 200;
+line-height: 45px; /* 125% */
+text-transform: capitalize;
+}
+.jourbt {
+    display: flex;
+    width: 306px;
+    height: 90px;
+    padding: 20px 43px;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 26px;
+    background: var(--pink);
+    color: var(--white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 0.3s ease; /* smooth transition for hover */
+    cursor: pointer;
+}
+
+/* Hover effect */
+.jourbt:hover {
+    transform: scale(1.05); /* slightly bigger */
+    box-shadow: var(--shadow); /* subtle shadow */
+    background: var(--pinkh); /* slightly lighter/pinker shade */
+}
+.high5{
+    width: 619px;
+height: 551px;
+background-image: url(assets/Group\ 25.png);
 background-size: contain;
 background-repeat: no-repeat;
 }
