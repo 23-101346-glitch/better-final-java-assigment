@@ -15,6 +15,7 @@
     --navblur:rgba(252, 248, 236, 0.8);
     --pinkh:#FF92A5;
     --pink:#E77790;
+    --lightery:#FFD74D;
 }
 
 @font-face {
@@ -238,7 +239,7 @@ a{
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .logout:hover {
-    color: #ff4d4d; 
+    color: var(--orange); 
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -277,24 +278,23 @@ a{
     gap: 31px;
     flex-shrink: 0;
 }
-/* h1 base style */
+
 h1 {
     color: var(--back);
     font-family: "ne";
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
-    line-height: 113.48%; /* 108.941px */
+    line-height: 113.48%; 
 }
 
-/* Highlighted words */
 .highlight {
     color: var(--lightgreen);
-    display: inline-block; /* needed for transform/animation */
-    animation: pulse 2s infinite; /* animation loop */
+    display: inline-block; 
+    animation: pulse 2s infinite;
 }
 
-/* Animation keyframes */
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -302,8 +302,8 @@ h1 {
         color: var(--lightgreen);
     }
     50% {
-        transform: scale(1.1); /* slight zoom */
-        opacity: 0.8; /* subtle fade */
+        transform: scale(1.1); 
+        opacity: 0.8; 
     }
     100% {
         transform: scale(1);
@@ -445,6 +445,7 @@ h1 {
     z-index: 2;
     margin-top: -90px;
 }
+/* section2 */
 .s2{
     width: 100%;
     height: 899px;
@@ -544,25 +545,26 @@ h4{
     border-color: var(--yellow);
     background: var(--yellow);
 }
+/* section3 */
 .s3{
    display: flex;
-width: 100%;
-height: 845px;
-padding: 26px 173px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-position: relative;
-align-items: center;
-justify-content: center;
+    width: 100%;
+    height: 845px;
+    padding: 26px 173px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .s3d1{
     display: flex;
-width: 1165.326px;
-flex-direction: column;
-align-items: center;
-gap: 7px;
-height: 760.69px;
+    width: 1165.326px;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    height: 760.69px;
 }
 .c1{
     width: 645px;
@@ -570,11 +572,11 @@ height: 105.001px;
 }
 .lines{
     width: 207.001px;
-height: 17.001px;
-background-image: url(assets/lines.svg);
-background-size: contain;
-margin-left: 50px;
-background-repeat: no-repeat;
+    height: 17.001px;
+    background-image: url(assets/lines.svg);
+    background-size: contain;
+    margin-left: 50px;
+    background-repeat: no-repeat;
 }
 .p3{
     color:var(--back);
@@ -600,7 +602,7 @@ background-repeat: no-repeat;
     height: 473px;
     transform: rotate(7.458deg);
     border-radius: 23px;
-    background: #203A8E;
+    background: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -611,7 +613,7 @@ background-repeat: no-repeat;
     height: 473px;
     transform: rotate(-6.147deg);
     border-radius: 23px;
-    background: #E77790;
+    background:var(--pink);
      display: flex;
     align-items: center;
     justify-content: center;
@@ -622,7 +624,7 @@ background-repeat: no-repeat;
     height: 395.274px;
     transform: rotate(17.191deg);
     border-radius: 23px;
-    background: #F7BA26;
+    background: var(--yellow);
      display: flex;
     align-items: center;
     justify-content: center;
@@ -633,23 +635,21 @@ background-repeat: no-repeat;
     cursor: pointer;
 }
 
-/* Soft gentle hover effect */
 .card1:hover {
     transform: rotate(8deg) scale(1.03) translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: var(--shadow);
 }
 
 .card2:hover {
     transform: rotate(-5deg) scale(1.03) translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: var(--shadow);
 }
 
 .card3:hover {
     transform: rotate(18deg) scale(1.03) translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow:var(--shadow) 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* Optional gentle floating animation */
 .card1:hover, .card2:hover, .card3:hover {
     animation: gentleBubble 1.2s ease-in-out infinite alternate;
 }
@@ -661,41 +661,42 @@ background-repeat: no-repeat;
 }
 
 .quotes{
-    color: #FFF;
-text-align: center;
-font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: capitalize;
-margin-top: 120px;
+    color: var(--white);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 120px;
 }
 .star1{
- width: 142px;
-height: 142px;
-background-image: url(assets/Star\ 1.svg);
-margin-top: -220px;
-background-size: contain;
-background-repeat: no-repeat;
+    width: 142px;
+    height: 142px;
+    background-image: url(assets/Star\ 1.svg);
+    margin-top: -220px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .star2{
-width: 89px;
-height: 89px;
-transform: rotate(-11.213deg);
-background-image: url(assets/Star\ 2.svg);
-margin-top: -220px;
-background-size: contain;
-background-repeat: no-repeat;
+    width: 89px;
+    height: 89px;
+    transform: rotate(-11.213deg);
+    background-image: url(assets/Star\ 2.svg);
+    margin-top: -220px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .star3{
-width: 89px;
-height: 89px;
-transform: rotate(-11.213deg);
-background-image: url(assets/Star\ 3.svg);
-margin-top: -140px;
-background-size: contain;
-background-repeat: no-repeat;
+    width: 89px;
+    height: 89px;
+    transform: rotate(-11.213deg);
+    background-image: url(assets/Star\ 3.svg);
+    margin-top: -140px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+/* section4 */
 .s4{
     width: 100%;
     height: 808px;
@@ -713,37 +714,37 @@ background-repeat: no-repeat;
 }
 .c3{
     width: 674px;
-height: 548px;
-background-image: url(assets/Rectangle\ 49.svg);
-background-size: contain;
-display: flex;
-align-items: center;
-justify-content: center;
-background-repeat: no-repeat;
+    height: 548px;
+    background-image: url(assets/Rectangle\ 49.svg);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
 .c3d{
     display: flex;
-width: 620px;
-flex-direction: column;
-align-items: center;
-gap: 56px;
+    width: 620px;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
 }
 .help{
     color: var(--d2);
-text-align: center;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 30.6px; /* 47.813% */
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30.6px; /* 47.813% */
 }
 .p4{
     color: var(--back);
-text-align: center;
-font-size: 36px;
-font-style: normal;
-font-weight: 200;
-line-height: 45px; /* 125% */
-text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 45px; /* 125% */
+    text-transform: capitalize;
 }
 .jourbt {
     display: flex;
@@ -760,20 +761,135 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    transition: all 0.3s ease; /* smooth transition for hover */
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+.jourbt:hover {
+    transform: scale(1.05); 
+    box-shadow: var(--shadow); 
+    background: var(--pinkh); 
+}
+.high5{
+    width: 619px;
+    height: 551px;
+    background-image: url(assets/Group\ 25.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* section 5 */
+.s5{
+    width: 100%;
+    height: 848px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.s5c1{
+    display: flex;
+    width: 1286.371px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.p5{
+    color: var(--darkgreen);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30.6px; /* 127.5% */
+}
+.staticsd{
+    width: 1286.371px;
+    height: 410.407px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards {
+    display: flex;
+    width: 297.371px;
+    height: 410.407px;
+    padding: 36px 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    border-radius: 26.898px;
+    border: 6px solid var(--darkgreen);
+    background: var(--white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 /* Hover effect */
-.jourbt:hover {
-    transform: scale(1.05); /* slightly bigger */
-    box-shadow: var(--shadow); /* subtle shadow */
-    background: var(--pinkh); /* slightly lighter/pinker shade */
+.cards:hover {
+    transform: scale(1.05) translateY(-8px); 
+    box-shadow:var(--shadow); 
+    border-color: var(--blue);
 }
-.high5{
-    width: 619px;
-height: 551px;
-background-image: url(assets/Group\ 25.png);
+
+.staticsicons{
+    width: 169px;
+height: 169px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
 background-size: contain;
 background-repeat: no-repeat;
+}
+.brain{background-image: url(assets/icon-park-solid_brain.svg);}
+.herat{background-image: url(assets/healthicons_mental-health-outline-24px.svg);}
+.helpp{background-image: url(assets/mdi_help-outline.svg);}
+.ages{background-image: url(assets/game-icons_ages.svg);}
+.statstext{
+    color:var(--back) #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.6px; /* 127.5% */
+}
+.p6{
+    color: var(--back);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+.morefactsbt {
+    display: flex;
+    width: 306px;
+    height: 90px;
+    padding: 20px 43px;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    color: #1A3D3A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 26px;
+    background: var(--yellow);
+    line-height: normal;
+    transition: all 0.3s ease; /* smooth transition */
+    cursor: pointer;
+}
+
+/* Hover effect */
+.morefactsbt:hover {
+    transform: scale(1.05); 
+    box-shadow: var(--shadow);
+    background:var(--lightery); 
+}
+.circle {
+    width: 349px;
+    height: 349px;
+    border-radius: 50%; 
+    background: var(--yellow);
+    position: absolute; 
+    left: 200px;
+    z-index: -10; 
+    margin-top: -100px;
 }

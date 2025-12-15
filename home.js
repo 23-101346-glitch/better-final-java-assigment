@@ -33,3 +33,43 @@ window.addEventListener('scroll', () => {
   cards.forEach((card, index) => {
     card.textContent = randomQuotes[index];
   });
+
+   const facts = [
+    {
+      iconClass: "brain",
+      title: "1 in 4 People",
+      description: "Will experience anxiety at some point in their life"
+    },
+    {
+      iconClass: "herat",
+      title: "Most Common",
+      description: "Anxiety disorders are among the most common mental health issues worldwide"
+    },
+    {
+      iconClass: "helpp",
+      title: "Delayed Help-Seeking",
+      description: "Many people live with anxiety for years before seeking support"
+    },
+    {
+      iconClass: "ages",
+      title: "Affects All Ages",
+      description: "Anxiety can affect children, teens, and adults"
+    }
+  ];
+
+  // Get the container
+  const container = document.getElementById("statics-container");
+
+  // Loop through the facts and create cards
+  facts.forEach(fact => {
+    const card = document.createElement("div");
+    card.classList.add("cards");
+
+    card.innerHTML = `
+      <div class="staticsicons ${fact.iconClass}"></div>
+      <h2 class="statstext">${fact.title}</h2>
+      <p class="p6">${fact.description}</p>
+    `;
+
+    container.appendChild(card);
+  });
