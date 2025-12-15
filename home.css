@@ -542,3 +542,153 @@ h4{
     border-color: var(--yellow);
     background: var(--yellow);
 }
+.s3{
+   display: flex;
+width: 100%;
+height: 845px;
+padding: 26px 173px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+position: relative;
+}
+.s3d1{
+    display: flex;
+width: 1165.326px;
+flex-direction: column;
+align-items: center;
+gap: 7px;
+height: 760.69px;
+}
+.c1{
+    width: 645px;
+height: 105.001px;
+}
+.lines{
+    width: 207.001px;
+height: 17.001px;
+background-image: url(assets/lines.svg);
+background-size: contain;
+margin-left: 50px;
+background-repeat: no-repeat;
+}
+.p3{
+    color:var(--back);
+    text-align: center;
+    font-size: 25.672px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 935px;
+    height: 62px;
+}
+.c2{
+    width: 1165.326px;
+    height: 579.689px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    width: 352px;
+    height: 473px;
+    transform: rotate(7.458deg);
+    border-radius: 23px;
+    background: #203A8E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card2{
+    width: 352px;
+    height: 473px;
+    transform: rotate(-6.147deg);
+    border-radius: 23px;
+    background: #E77790;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+       flex-direction: column;
+}
+.card3{
+    width: 352px;
+    height: 395.274px;
+    transform: rotate(17.191deg);
+    border-radius: 23px;
+    background: #F7BA26;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+       flex-direction: column;
+}
+.card1, .card2, .card3 {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Soft gentle hover effect */
+.card1:hover {
+    transform: rotate(8deg) scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card2:hover {
+    transform: rotate(-5deg) scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card3:hover {
+    transform: rotate(18deg) scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Optional gentle floating animation */
+.card1:hover, .card2:hover, .card3:hover {
+    animation: gentleBubble 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes gentleBubble {
+    0% { transform: scale(1.03) translateY(-5px) rotate(0deg); }
+    50% { transform: scale(1.035) translateY(-6px) rotate(1deg); }
+    100% { transform: scale(1.03) translateY(-5px) rotate(0deg); }
+}
+
+.quotes{
+    color: #FFF;
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+margin-top: 120px;
+}
+.star1{
+ width: 142px;
+height: 142px;
+background-image: url(assets/Star\ 1.svg);
+margin-top: -220px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.star2{
+width: 89px;
+height: 89px;
+transform: rotate(-11.213deg);
+background-image: url(assets/Star\ 2.svg);
+margin-top: -220px;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.star3{
+width: 89px;
+height: 89px;
+transform: rotate(-11.213deg);
+background-image: url(assets/Star\ 3.svg);
+margin-top: -140px;
+background-size: contain;
+background-repeat: no-repeat;
+}
