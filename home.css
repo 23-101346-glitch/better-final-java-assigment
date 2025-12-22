@@ -1,9 +1,12 @@
 :root {
     --back:  #000000;
+    --backt:  #000000;
     --white:#FCF8EC;
+     --whitet:#FCF8EC;
     --darkgreen:#1A3D3A;
     --d2:#012614;
     --lightgreen:#017F01;
+    --lightgreen1:#017F01;
     --hover:#04c504;
     --yellow:#F7BA26;
     --find:#1a2e7a;
@@ -20,6 +23,32 @@
     --footer2:rgba(247, 186, 38, 0.30);
     --boardertop:rgba(252, 248, 236, 0.20);
     --shadow:0 12px 25px rgba(0, 0, 0, 0.15);
+}
+/* DARK MODE */
+.dark-mode {
+    --back: #FCF8EC;
+    --backt:#000000;
+    --white:  #012614;
+    --whitet:  #FCF8EC;
+    --darkgreen:  #FCF8EC;
+    --d2: #FCF8EC;
+    --lightgreen: #04c504;
+    --lightgreen1: #ffffff;
+    --hover: #1eff1e;
+    --yellow: #f7ba26;
+    --find: #8fa3ff;
+    --blue: #9bb0ff;
+    --shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+    --orange: #ff6b6b;
+    --selected: rgba(190, 216, 190, 0.67);
+    --logohover: #1eff1e;
+    --navblur: rgba(14, 14, 14, 0.85);
+    --pinkh: #ff9fb0;
+    --pink: #e77790;
+    --lightery: #ffd74d;
+    --footer1: rgba(247, 186, 38, 0.08);
+    --footer2: rgba(247, 186, 38, 0.2);
+    --boardertop: rgba(255, 255, 255, 0.15);
 }
 
 @font-face {
@@ -144,7 +173,7 @@ a{
     align-items: center;
 }
 .navbt {
-    color: var(--lightgreen);
+    color: var(--lightgreen1);
     font-family: 'po';
     font-size: 24px;
     font-style: normal;
@@ -199,7 +228,7 @@ a{
 }
 
 .darkmode {
-    color: var(--lightgreen);
+    color: var(--lightgreen1);
     font-size: 8.923px;
     font-style: normal;
     font-weight: 300;
@@ -261,43 +290,37 @@ a{
 }
 .s1div1{
     display: flex;
-    width: 1367px;
-    height: 805px;
-    padding: 83px 39px;
+    width: 1260px;
+    height: 740px;
+    padding: 72px 34px;
+    margin-top: -150px;
     justify-content: space-between;
-    align-items: center;    width: 1367px;
-    height: 805px;
-    background-color: var(--white);
-    border-radius: 46px;
-    display: flex;
-    flex-direction:row ;
-    border-radius: 46px;
+    align-items: center;
     background: var(--white);
+    border-radius: 40px;
 }
+
 .child1{
     display: flex;
-    width: 815px;
+    width: 750px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 31px;
-    flex-shrink: 0;
+    gap: 28px;
 }
 
 h1 {
     color: var(--back);
     font-family: "ne";
-    font-size: 96px;
-    font-style: normal;
+    font-size: 86px;
     font-weight: 400;
-    line-height: 113.48%; 
+    line-height: 112%;
 }
 
 .highlight {
     color: var(--lightgreen);
-    display: inline-block; 
+    display: inline-block;
     animation: pulse 2s infinite;
 }
-
 
 @keyframes pulse {
     0% {
@@ -306,8 +329,8 @@ h1 {
         color: var(--lightgreen);
     }
     50% {
-        transform: scale(1.1); 
-        opacity: 0.8; 
+        transform: scale(1.08);
+        opacity: 0.85;
     }
     100% {
         transform: scale(1);
@@ -318,128 +341,122 @@ h1 {
 
 .p1{
     color: var(--back);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    width: 453px;
+    font-size: 22px;
+    font-weight: 300;
+    width: 420px;
 }
+
 .s1btdiv{
-    width: 439px;
-    height: 62.353px;
+    width: 400px;
+    height: 58px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
+
 .learnmorebt {
     display: flex;
-    width: 212px;
-    height: 62.353px;
+    width: 195px;
+    height: 58px;
     background-color: var(--white);
     justify-content: center;
     align-items: center;
-    gap: 9.007px;
-    border-radius: 18.013px;
-    border: 3px solid var(--lightgreen);
-    transition: all 0.3s ease; /* smooth hover */
-    cursor: pointer; /* clickable */
+    gap: 8px;
+    border-radius: 16px;
+    border: 2.5px solid var(--lightgreen);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .learnmorebt:hover {
-    background-color: var(--lightgreen); /* fill with green */
-    transform: scale(1.05); /* subtle zoom */
-    box-shadow:var(--shadow); /* soft shadow */
+    background-color: var(--lightgreen);
+    transform: scale(1.05);
+    box-shadow: var(--shadow);
 }
 
 .learnmore {
     color: var(--lightgreen);
-    font-size: 16.627px;
-    font-style: normal;
+    font-size: 15px;
     font-weight: 500;
-    line-height: normal;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
 .learnmorebt:hover .learnmore {
-    color: var(--white); /* text turns white on hover */
+    color: var(--white);
 }
 
 .arrow1 {
-    width: 27.02px;
-    height: 27.02px;
+    width: 24px;
+    height: 24px;
     background-size: contain;
     background-image: url(icons/aroow1.png);
     transition: transform 0.3s ease;
 }
 
 .learnmorebt:hover .arrow1 {
-    transform: translateX(5px); /* arrow slides slightly on hover */
+    transform: translateX(4px);
 }
 
 .findsupportbt {
     display: flex;
-    width: 212px;
-    height: 62.353px;
+    width: 195px;
+    height: 58px;
     justify-content: center;
     align-items: center;
-    gap: 9.007px;
-    border-radius: 18.013px;
-    background:var(--blue);
-    transition: all 0.3s ease; /* smooth hover effect */
-    cursor: pointer; /* indicate it's clickable */
+    gap: 8px;
+    border-radius: 16px;
+    background: var(--blue);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .findsupportbt:hover {
     background: var(--find);
     transform: scale(1.05);
-    box-shadow: var(--shadow); 
+    box-shadow: var(--shadow);
 }
 
 .find {
     color: var(--white);
-    transition: color 0.3s ease;
 }
 
 .infodiv{
-    width: 595.481px;
-    height: 70px;
+    width: 550px;
+    height: 64px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
+
 .i1{
     display: flex;
-    width: 252.131px;
-    height: 70px;
-    padding-bottom: 0;
+    width: 235px;
+    height: 64px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
+
 .num{
     color: var(--darkgreen);
-    font-size: 20.513px;
-    font-style: normal;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 30.769px; /* 150% */
 }
+
 .inftext{
     color: var(--back);
-    font-size: 23.077px;
-    font-style: normal;
+    font-size: 21px;
     font-weight: 400;
-    width: 400px;
-    line-height: 39.231px; /* 170% */
+    width: 380px;
+    line-height: 160%;
 }
+
 .s1img2{
-    width: 444px;
-    height: 618px;
-    flex-shrink: 0;
-    aspect-ratio: 74/103;
+    width: 410px;
+    height: 570px;
     background-image: url(assets/s1img2.png);
     background-size: contain;
+    background-repeat: no-repeat;
 }
+
 .svg{
     width: 100vw;
     height: 100px;
@@ -780,6 +797,8 @@ height: 105.001px;
     background-image: url(assets/Group\ 25.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: var(--whitet);
+    border-radius: 30px;
 }
 /* section 5 */
 .s5{
@@ -822,7 +841,7 @@ height: 105.001px;
     gap: 21px;
     border-radius: 26.898px;
     border: 6px solid var(--darkgreen);
-    background: var(--white);
+    background: var(--whitet);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
@@ -847,7 +866,7 @@ background-repeat: no-repeat;
 .helpp{background-image: url(assets/mdi_help-outline.svg);}
 .ages{background-image: url(assets/game-icons_ages.svg);}
 .statstext{
-    color:var(--back);
+    color:var(--backt);
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -855,7 +874,7 @@ background-repeat: no-repeat;
     line-height: 30.6px; /* 127.5% */
 }
 .p6{
-    color: var(--back);
+    color: var(--backt);
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -957,17 +976,17 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
-color: var(--white);
+color: var(--whitet);
 text-align: center;
 border-radius: 13px;
-border: 3px solid var(--white);
+border: 3px solid var(--whitet);
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: 30.6px; /* 76.5% */
 }
 .cardinfo{
-    color: var(--white);
+    color: var(--whitet);
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -1103,7 +1122,7 @@ footer{
     line-height: 28.144px; /* 150% */
 }
 .fp1{
-    color: var(--white);
+    color: var(--whitet);
     font-size: 18.763px;
     font-style: normal;
     font-weight: 300;
