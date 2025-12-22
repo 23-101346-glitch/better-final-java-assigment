@@ -618,3 +618,117 @@ background-repeat: no-repeat;
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
+/* section5 */
+.s5{
+    width: 1512px;
+    height: 688px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s5d1{
+    width: 1160.487px;
+    height: 407px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.s5child1{
+    display: flex;
+    width: 553.561px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26.405px;
+}
+.dd1{
+    height: 131.905px;
+align-self: stretch;
+width: 553.56px;
+display: flex;
+flex-direction: column;
+}
+.how{
+    color: var(--back);
+font-size: 65.952px;
+font-style: normal;
+font-weight: 400;
+line-height: 65.952px; /* 100% */
+}
+.dd2{
+    width: 444.106px;
+    height: 76.614px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+.ssicon{
+    width: 43.968px;
+height: 43.968px;
+background-image: url(assets/ssIcon.svg);
+background-size: contain;
+background-repeat: no-repeat;
+}
+.dd3{
+    display: flex;
+height: 96.73px;
+flex-direction: column;
+align-items: flex-start;
+gap: 17.587px;
+align-self: stretch;
+}
+.p3{
+    color: var(--back);
+font-size: 17.587px;
+font-style: normal;
+font-weight: 400;
+line-height: 26.381px; /* 150% */
+}
+.gethelp {
+    display: flex;
+    padding: 10.773px 35.174px 14.989px 34.076px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8.222px;
+    border-radius: 30px; 
+    background: var(--backt);
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.gethelp:hover {
+    background: var(--lightgreen); 
+    transform: scale(1.05); 
+    box-shadow: var(--shadow);
+}
+
+.gethelpp {
+    color: var(--white);
+    text-align: center;
+    font-size: 17.587px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.381px; 
+}
+
+
+.arrow {
+    width: 21.984px;
+    height: 21.984px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/ARRRIcon.svg);
+    transition: transform 0.3s ease;
+}
+
+.gethelp:hover .arrow {
+    transform: translateX(5px); 
+}
+
+.chatc{
+    width: 534.96px;
+    height:407px ;
+    background-image: url(assets/chatContainer.png);
+    background-size: contain;
+background-repeat: no-repeat;
+}
