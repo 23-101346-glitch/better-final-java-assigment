@@ -510,3 +510,103 @@ a{
 .fheart{background-image: url(assets/fadedhIcon.svg);}
 .fstar{background-image: url(assets/fsIcon.svg);}
 .wt{color: var(--white);}
+.s3{
+    display: flex;
+    width: 1513px;
+    height: 829px;
+    padding: 83.951px 62.963px 0 62.963px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--d2)
+}
+.s3d1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.corevalues{
+    display: flex;
+    padding: 5.161px 12.902px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.601px;
+    border-radius: 30285842px;
+    border: 1.805px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 15.795px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.565px; /* 142.857% */
+}
+.what{
+    color: #FFF;
+text-align: center;
+font-size: 55.047px;
+font-style: normal;
+font-weight: 400;
+line-height: 67.694px; /* 122.975% */
+}
+.highlightt{color: var(--yellow);}
+.s3d2{
+    display: flex;
+height: 384.489px;
+padding: 0 7.033px 0 0;
+align-items: flex-start;
+gap: 27.078px;
+}
+
+
+.c1{background-image: url(assets/S11.png);}
+.c2{background-image: url(assets/s222.png);}
+.c3{background-image: url(assets/s33Container.png);}
+.c4{background-image: url(assets/s44Container.png);}
+.comp{
+    color: #FFF;
+font-size: 27.078px;
+font-style: normal;
+font-weight: 400;
+line-height: 36.104px; /* 133.333% */
+}
+.p4{
+    color: #FFF;
+font-size: 15.795px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.565px; /* 142.857% */
+}
+.s3baby {
+    width: 276.193px;
+    height: 405.244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.s3baby:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.colorsd {
+    width: 276.193px;
+    height: 276.193px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.s3baby:hover .colorsd {
+    transform: scale(1.08);
+    filter: brightness(0.85);
+}
+.s3baby:hover .comp {
+    color: var(--yellow);
+    transition: color 0.3s ease;
+}
+.s3baby:hover .p4 {
+    opacity: 0.9;
+}
