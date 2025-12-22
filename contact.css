@@ -23,6 +23,9 @@
     --footer2:rgba(247, 186, 38, 0.30);
     --boardertop:rgba(252, 248, 236, 0.20);
     --shadow:0 12px 25px rgba(0, 0, 0, 0.15);
+    --e:linear-gradient(135deg, #8EC5FF 0%, #DAB2FF 100%);
+    --e2:linear-gradient(135deg, #7BF1A8 0%, #5EE9B5 100%);
+    --e3: linear-gradient(135deg, #FFDF20 0%, #FFB86A 100%);
 }
 /* DARK MODE */
 .dark-mode {
@@ -336,7 +339,9 @@ a{
 .s2{
     width:100%;
     height: 1222px;
-    background-color: #E77790;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .s2d1{
     display: flex;
@@ -360,7 +365,7 @@ a{
     background: var(--d2);
 }
 .sendus{
-    color: #FFF;
+    color: var(--whitet);
 font-size: 42.402px;
 font-style: normal;
 font-weight: 400;
@@ -385,7 +390,7 @@ flex-shrink: 0;
 align-self: stretch;
 }
 .name{
-    color: #FFF;
+    color: var(--whitet);
 font-size: 16.49px;
 font-style: normal;
 font-weight: 400;
@@ -393,16 +398,16 @@ line-height: 23.557px; /* 142.857% */
 }
 .divname{
     display: flex;
-height: 60.306px;
-padding: 14.134px 28.268px;
-align-items: center;
-flex-shrink: 0;
-align-self: stretch;
-border-radius: 31617400px;
-border: 1.885px solid #D1D5DC;
+    height: 60.306px;
+    padding: 14.134px 28.268px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 31617400px;
+    border: 1.885px solid var(--whitet);
 }
 .yn{
-    color: rgba(255, 255, 255, 0.50);
+    color: var(--whitet);
 font-size: 18.845px;
 font-style: normal;
 font-weight: 400;
@@ -416,17 +421,17 @@ align-items: flex-start;
 flex-shrink: 0;
 align-self: stretch;
 border-radius: 28.268px;
-border: 1.885px solid #D1D5DC;
+border: 1.885px solid var(--whitet);
 width: 477.73px;
 }
 .sendusamessage{
     display: flex;
-padding: 16.253px 191.767px 20.706px 159.966px;
+padding: 16.253px 100.767px 20.706px 159.966px;
 align-items: center;
 align-self: stretch;
 border-radius: 31617400px;
-background: #FFF;
-color: #01453A;
+background:var(--whitet);
+color: var(--darkgreen);
 text-align: center;
 font-size: 18.845px;
 font-style: normal;
@@ -443,10 +448,95 @@ flex-shrink: 0;
 align-self: stretch;
 }
 .typically{
-    color: #FFF;
+    color: var(--whitet);
 text-align: center;
 font-size: 16.49px;
 font-style: normal;
 font-weight: 400;
 line-height: 23.557px; /* 142.857% */
+}
+.child22{
+    display: flex;
+    width: 590.806px;
+    height: 1061px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28.268px;
+    flex-shrink: 0;
+}
+.emaildiv{
+    width: 590.81px;
+    height: 287.379px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 28.268px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.e{background: var(--e);}
+.e1{background: var(--e2)}
+.e2{background: var(--e3)}
+.child2baby{
+    display: flex;
+    width: 496.578px;
+    height: 190.325px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+.iconn{
+    width: 56.536px;
+    height: 56.536px;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mail{background-image: url(assets/mmmIcon.png);}
+.chat{background-image: url(assets/chatIcon.png);}
+.phone{background-image: url(assets/phoneIcon.png);}
+.t1{
+    color: var(--backt);
+font-size: 28.268px;
+font-style: normal;
+font-weight: 400;
+line-height: 37.691px; /* 133.333% */
+}
+.t2{
+    color: var(--backt);
+font-size: 18.845px;
+font-style: normal;
+font-weight: 400;
+line-height: 28.268px; /* 150% */
+}
+.t3{
+    color: var(--backt);
+font-size: 21.201px;
+font-style: normal;
+font-weight: 400;
+line-height: 32.98px; /* 155.556% */
+
+}
+.k{
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+.startchat{
+    display: inline-flex;
+    padding: 6.832px 26.232px 11.282px 27.09px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 31617400px;
+    background: var(--backt);
+    color: var(--whitet);
+    text-align: center;
+    font-size: 18.845px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.268px; /* 150% */
 }
