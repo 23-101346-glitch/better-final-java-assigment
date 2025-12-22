@@ -694,3 +694,47 @@ a{
     cursor: pointer;
     transform: scale(1.05);
 }
+.s5{
+    width: 100%;
+    height: 533px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s5d1{
+    width: 1280.734px;
+    height: 385px;
+    border-radius: 29.241px;
+    background: var(--darkgreen);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+.impact{
+    color: var(--whitet);
+text-align: center;
+font-size: 58.481px;
+font-style: normal;
+font-weight: 400;
+line-height: 58.481px; /* 100% */
+}
+.imdiv{
+    display: flex;
+height: 112.089px;
+justify-content: center;
+align-items: flex-start;
+gap: 38.987px;
+flex-shrink: 0;
+align-self: stretch;
+}
+.statss{
+    display: flex;
+width: 251.956px;
+height: 112.089px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 9.747px;
+}
