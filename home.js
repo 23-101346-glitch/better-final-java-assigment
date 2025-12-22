@@ -54,32 +54,33 @@ window.addEventListener('scroll', () => {
     card.textContent = randomQuotes[index];
   });
 
-   const facts = [
-    {
-      iconClass: "brain",
-      title: "1 in 4 People",
-      description: "Will experience anxiety at some point in their life"
-    },
-    {
-      iconClass: "herat",
-      title: "Most Common",
-      description: "Anxiety disorders are among the most common mental health issues worldwide"
-    },
-    {
-      iconClass: "helpp",
-      title: "Delayed Help-Seeking",
-      description: "Many people live with anxiety for years before seeking support"
-    },
-    {
-      iconClass: "ages",
-      title: "Affects All Ages",
-      description: "Anxiety can affect children, teens, and adults"
-    }
-  ];
+  const facts = [
+  {
+    iconClass: "brain",
+    title: "1 in 4 People",
+    description: "Will experience anxiety at some point in their life"
+  },
+  {
+    iconClass: "herat",
+    title: "Most Common",
+    description: "Anxiety disorders are among the most common mental health issues worldwide"
+  },
+  {
+    iconClass: "helpp",
+    title: "Delayed Help-Seeking",
+    description: "Many people live with anxiety for years before seeking support"
+  },
+  {
+    iconClass: "ages",
+    title: "Affects All Ages",
+    description: "Anxiety can affect children, teens, and adults"
+  }
+];
 
-  // Get the container
-  const container = document.getElementById("statics-container");
+// Get the container
+const container = document.getElementById("statics-container");
 
+if (container) {
   // Loop through the facts and create cards
   facts.forEach(fact => {
     const card = document.createElement("div");
@@ -93,3 +94,6 @@ window.addEventListener('scroll', () => {
 
     container.appendChild(card);
   });
+} else {
+  console.warn("Container #statics-container not found in the DOM.");
+}
