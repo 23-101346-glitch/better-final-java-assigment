@@ -17,10 +17,10 @@
                     </a>
                 </div>
                 <div class="navbtdiv">
-                    <a href="HOME.HTML"> <h2 class="navbt">Home</h2></a>
-                    <a href="gallery.html"> <h2 class="navbt selected">Gallery</h2></a>
-                    <a href="contact.html"> <h2 class="navbt">Contact</h2></a>
-                    <a href="about.html"> <h2 class="navbt">About</h2></a>
+                    <a href="home.html"><h2 class="navbt" data-page="home.html">Home</h2></a>
+                    <a href="gallery.html"><h2 class="navbt" data-page="gallery.html">Gallery</h2></a>
+                    <a href="contact.html"><h2 class="navbt" data-page="contact.html">Contact</h2></a>
+                    <a href="about.html"><h2 class="navbt" data-page="about.html">About</h2></a>
                 </div>
                 <div class="icondiv">
                    <svg class="ar" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@
                         </svg>
                         <h2 class="darkmode">PROFILE</h2>
                     </div>
-                    <h2 class="logout">Log Out</h2>
+                    <a href="INDEX.HTML"><h2 class="logout">Log Out</h2></a>
                 </div>
             </div>
         </nav>
@@ -105,6 +105,9 @@
                 <h3 class="num">150+</h3>
                 <h3 class="des">Free Resources</h3>
             </div>
+        </div>
+        <div id="scrollTopBtn" class="scrolltotop">
+            <div class="arrow22"></div>
         </div>
     </section>
     <section class="s2">
@@ -262,4 +265,11 @@
     </footer>
     <script src="about.js"></script>
 </body>
+<div id="preloader">
+    <div class="preloaderBox">
+        <div class="pulse"></div>
+        <h3 class="loadingText">Loading...</h3>
+    </div>
+</div>
+
 </html>

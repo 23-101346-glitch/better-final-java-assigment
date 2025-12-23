@@ -1,0 +1,309 @@
+:root {
+    --back:  #000000;
+    --backt:  #000000;
+    --white:#FCF8EC;
+    --background: #012614;
+    --preloader:linear-gradient(135deg, #0a0a0a, #1a3d3a);
+    --h5:rgba(255, 255, 255, 0.60);
+    --green:#017F01;
+    --dont:rgba(1, 38, 20, 0.70);
+    --div: rgba(1, 38, 20, 0.20);
+    --or:rgba(1, 38, 20, 0.50);
+    --box:0 10.034px 15.051px -3.01px rgba(0, 0, 0, 0.10), 0 4.014px 6.021px -4.014px rgba(0, 0, 0, 0.10);
+    --em1:rgba(10, 10, 10, 0.50);
+}
+@font-face {
+    font-family: 'mon';
+    src: url(fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'ke';
+    src: url(fonts/Knewave-Regular.ttf);
+}
+@font-face {
+    font-family: 'po';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'ne';
+    src: url(fonts/NewTegomin-Regular.ttf);
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'mon';
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoutdivv{
+    display: flex;
+    width: 705.512px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logodiv {
+    width: 178px;
+    height: 66px;
+    position: relative; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: var(--white);
+    font-family: 'ke';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.6px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease; 
+}
+
+.hearticon {
+    background-image: url(icons/solar_heart-broken.svg);
+    width: 44.809px;
+    height: 41.176px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%; 
+    left: 90%;
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+h1{
+    color: var(--white);
+    text-align: center;
+    font-size: 20.762px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.143px; /* 150% */
+}
+.logdiv1{
+    width: 613.756px;
+    height: 630.958px;
+    border-radius: 39.217px;
+    background: var(--white);
+    box-shadow: 0 28.836px 57.672px -13.841px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1{
+    display: flex;
+    width: 385.318px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+}
+h2{
+    color: var(--background);
+    font-size: 32.11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48.165px; /* 150% */
+}
+h3{
+    color: var(--dont);
+    font-size: 16.055px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.082px; /* 150% */
+}
+.div2{
+    height: 296.614px;
+    align-self: stretch;
+    width: 385.32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.b1{
+    display: flex;
+    width: 385.318px;
+    height: 80.475px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8.027px;
+}
+.em{
+    color: var(--background);
+    font-size: 14.048px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.072px; /* 150% */
+}
+.emaildiv{
+    display: flex;
+    height: 51.376px;
+    padding: 12.041px 16.055px;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 12.041px;
+    border: 1.605px solid var(--div);
+    color:var(--em1);
+    font-size: 16.055px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.forgot{
+    color: var(--green);
+    text-align: right;
+    font-size: 14.048px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.072px; /* 150% */
+}
+.signinbt{
+    display: flex;
+    width: 385.318px;
+    padding: 10.637px 0 12.538px 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18.062px;
+    background:var(--green);
+    box-shadow:var(--box);
+    color: var(--white);
+    text-align: center;
+    font-size: 18.062px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.093px; /* 150% */
+}
+.ordiv{
+    display: flex;
+    height: 21.072px;
+    padding-right: 0;
+    align-items: center;
+    gap: 16.055px;
+    align-self: stretch;
+}
+.line{
+    width: 169.38px;
+    height: 1px;
+    background: var(--div);
+}
+.or{
+    color: var(--or);
+    font-size: 14.048px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.072px; /* 150% */
+}
+.googlediv{
+    display: flex;
+    padding: 14.048px 78.49px 12.327px 90.735px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7.024px;
+    align-self: stretch;
+    border-radius: 18.062px;
+    border: 1.605px solid var(--div);
+}
+.googleicon{
+    width: 20.069px;
+    height: 20.069px;
+    background-image: url(assets/googleIcon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.continuegoogle{
+    color: var(--background);
+    text-align: center;
+    font-size: 16.055px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24.082px; /* 150% */
+}
+.dont{
+    color: var(--dont);
+    text-align: center;
+    font-size: 14.048px;
+    display: flex;
+    align-self: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.072px; /* 150% */
+}
+.sign{color:var(--green);}
+h5{
+    color: var(--h5);
+    text-align: center;
+    font-size: 13.841px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20.762px; /* 150% */
+}
+#preloader{
+    position: fixed;
+    inset: 0;
+    background: var(--preloader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.preloaderBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.pulse{
+    width: 70px;
+    height: 70px;
+    background: var(--white);
+    border-radius: 50%;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+.loadingText{
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* animation */
+@keyframes pulse{
+    0%{
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+}
+
+/* hide */
+#preloader.hide{
+    opacity: 0;
+    pointer-events: none;
+}

@@ -17,12 +17,13 @@
                         <div class="hearticon"></div>
                     </a>
                 </div>
-                <div class="navbtdiv">
-                    <a href="HOME.HTML"> <h2 class="navbt">Home</h2></a>
-                    <a href="gallery.html"> <h2 class="navbt selected">Gallery</h2></a>
-                    <a href="contact.html"> <h2 class="navbt">Contact</h2></a>
-                    <a href="about.html"> <h2 class="navbt">About</h2></a>
+               <div class="navbtdiv">
+                    <a href="home.html"><h2 class="navbt" data-page="home.html">Home</h2></a>
+                    <a href="gallery.html"><h2 class="navbt" data-page="gallery.html">Gallery</h2></a>
+                    <a href="contact.html"><h2 class="navbt" data-page="contact.html">Contact</h2></a>
+                    <a href="about.html"><h2 class="navbt" data-page="about.html">About</h2></a>
                 </div>
+
                 <div class="icondiv">
                    <svg class="ar" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.9999 6.3335C15.9599 6.3335 13.4583 8.83516 13.4583 11.8752C13.4583 13.3477 14.0599 14.6935 15.0416 15.691C12.6191 17.2743 11.0833 19.9818 11.0833 22.9585C11.0833 27.756 14.9941 31.6668 19.7916 31.6668C22.5783 31.6668 25.3333 30.9385 27.7083 29.5452L26.1249 26.806C24.1933 27.9143 22.0083 28.5002 19.7916 28.5002C16.7199 28.5002 14.2499 26.046 14.2499 22.9585C14.2471 21.739 14.6478 20.5528 15.3896 19.5848C16.1313 18.6168 17.1725 17.9213 18.3508 17.6068L26.5999 15.3902L25.7766 12.3343L18.7308 14.2502C17.5433 14.0918 16.6249 13.1102 16.6249 11.8752C16.6249 10.5452 17.6699 9.50016 18.9999 9.50016C19.4116 9.50016 19.7916 9.611 20.1874 9.81683L21.7708 7.07766C20.9316 6.58683 19.9658 6.3335 18.9999 6.3335Z" fill="#017F01"/>
@@ -36,15 +37,15 @@
                             </svg>
                         </div>
 
-                        <h2 class="darkmode">DARK MODE</h2>
+                        <h3 class="darkmode">DARK MODE</h3>
                     </div>
                     <div class="profilediv">
                         <svg class="profileicon" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 3.25C21.634 3.24999 23.747 3.6703 25.7186 4.48693C27.6901 5.30357 29.4815 6.50053 30.9905 8.00948C32.4994 9.51843 33.6964 11.3098 34.5131 13.2814C35.3297 15.2529 35.75 17.366 35.75 19.5C35.75 28.4746 28.4746 35.75 19.5 35.75C10.5254 35.75 3.25 28.4746 3.25 19.5C3.25 10.5254 10.5254 3.25 19.5 3.25ZM21.125 21.125H17.875C13.852 21.125 10.3981 23.5615 8.90843 27.0396C11.2655 30.3448 15.1311 32.5 19.5 32.5C23.8689 32.5 27.7345 30.3448 30.0916 27.0394C28.6019 23.5615 25.148 21.125 21.125 21.125ZM19.5 8.125C16.8076 8.125 14.625 10.3076 14.625 13C14.625 15.6924 16.8076 17.875 19.5 17.875C22.1923 17.875 24.375 15.6924 24.375 13C24.375 10.3076 22.1924 8.125 19.5 8.125Z" fill="#017F01"/>
                         </svg>
-                        <h2 class="darkmode">PROFILE</h2>
+                        <h3 class="darkmode">PROFILE</h3>
                     </div>
-                    <h2 class="logout">Log Out</h2>
+                    <a href="INDEX.HTML"><h3 class="logout">Log Out</h3></a>
                 </div>
             </div>
         </nav>
@@ -62,7 +63,9 @@
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
             </div>
-
+            <div id="scrollTopBtn" class="scrolltotop">
+                <div class="arrow22"></div>
+            </div>
         </section>
         <section class="s2">
             <div class="s2d1">
@@ -239,4 +242,11 @@
     </Main>
     <script src="gallery.js"></script>
 </body>
+<div id="preloader">
+    <div class="preloaderBox">
+        <div class="pulse"></div>
+        <h3 class="loadingText">Loading...</h3>
+    </div>
+</div>
+
 </html>

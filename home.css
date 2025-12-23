@@ -23,6 +23,7 @@
     --footer2:rgba(247, 186, 38, 0.30);
     --boardertop:rgba(252, 248, 236, 0.20);
     --shadow:0 12px 25px rgba(0, 0, 0, 0.15);
+      --preloader:linear-gradient(135deg, #0a0a0a, #1a3d3a);
 }
 /* DARK MODE */
 .dark-mode {
@@ -466,6 +467,40 @@ h1 {
     z-index: 2;
     margin-top: -90px;
 }
+.scrolltotop {
+    display: flex;
+    width: 70px; /* smaller for corner */
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50%;
+    background: var(--lightery);
+    position: fixed;
+    bottom: 30px; /* distance from bottom */
+    right: 30px;  /* distance from right */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0; /* hidden initially */
+}
+
+.scrolltotop.show {
+    opacity: 1;
+}
+
+.arrow22 {
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/Arrow\ 22222.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.scrolltotop:hover {
+    transform: scale(1.1);
+}
+
 /* section2 */
 .s2{
     width: 100%;
@@ -1235,4 +1270,61 @@ footer{
     border-radius: 18.763px;
     border: 0.938px solid var(--footer2);
     background: var(--footer1);
+}
+#preloader{
+    position: fixed;
+    inset: 0;
+    background: var(--preloader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+/* container */
+.preloaderBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* pulse circle */
+.pulse{
+    width: 70px;
+    height: 70px;
+    background: var(--white);
+    border-radius: 50%;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+/* text */
+.loadingText{
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* animation */
+@keyframes pulse{
+    0%{
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+}
+
+/* hide */
+#preloader.hide{
+    opacity: 0;
+    pointer-events: none;
 }
