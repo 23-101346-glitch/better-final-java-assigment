@@ -1,3 +1,16 @@
+// ===== Dark Mode Toggle =====
+const toggleBtn = document.getElementById("themeToggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});
+
 // Make fields editable
 const editableFields = document.querySelectorAll(".divname h3, .divnamee h3");
 editableFields.forEach(field => {
